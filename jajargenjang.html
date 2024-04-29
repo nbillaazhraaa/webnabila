@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>luas Jajar Genjang</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="miranab.css" type="text/css">
+</head>
+<body>
+<a href="daftar.html"><button class="back">Back</button></a>
+<center><h1>Luas Jajar Genjang</h1></center>
+<center><h5 class="head">(Alas x Tinggi)</h5></center>
+<div class="oll">
+<div class="grup-oll">
+	<div class="lulu">
+		<h4>Alas :</h4>
+		<input id="alas" type="number" placeholder="Input Sisi">
+		</div>
+		<div class="lulu">
+		<h4>Tinggi :</h4>
+		<input id="ti" type="number" placeholder="Input Sisi">
+		</div>
+		
+		<button onclick="cekhasil()" class="cek">Hasil</button>
+		<button onclick="reset()" class="cek">Reset</button>
+		
+		<div class="lulu">
+		<h4>Luas :</h4>
+		<Input id="luasnya" type="number" placeholder="Hasil" class="hasil" readonly>
+		</div>
+	</div> 
+</div>
+<script>
+function cekhasil() {
+var alas  = document.getElementById("alas").value;
+var ti  = document.getElementById("ti").value;
+document.getElementById("luasnya").value=alas*ti;
+}
+function reset() {
+document.getElementById("alas").value="";
+document.getElementById("ti").value="";
+document.getElementById("luasnya").value="";
+}
+</script>
+</body>
+</html>

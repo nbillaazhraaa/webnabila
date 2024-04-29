@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Luas Segitiga</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="miranab.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<a href="daftar.html"><button class="back">Back</button></a>
+<center><h1>Luas Segitiga</h1></center>
+<center><h5 class="head">(½ x Alas x Tinggi)</h5></center>
+<div class="oll">
+<div class="grup-oll">
+	<div class="lulu">
+		<h4>Alas :</h4>
+		<input id="alas" type="number" placeholder="Input alas">
+	</div>
+
+	<div class="lulu">
+		<h4>Tinggi :</h4>
+		<input id="tinggi" type="number" placeholder="Input tinggi">
+	</div>
+
+		<button onclick="cekHasil()" class="cek">Hasil</button>
+		
+		<button onclick="reset()" class="cek">Reset</button>
+	<div class="lulu">
+		<h4>Luas :</h4>
+		<input id="luas" type="number" placeholder="Hasil" class="hasil" readonly>
+	</div>
+</div>
+</div>
+<script>
+function cekHasil() {
+var alas = document.getElementById("alas").value;
+var tinggi = document.getElementById("tinggi").value;
+document.getElementById("luas").value=(alas*tinggi)*0.5;
+}
+function reset() {
+document.getElementById("alas").value="";
+document.getElementById("tinggi").value="";
+document.getElementById("luas").value="";
+}
+</script>
+</body>
+</html>

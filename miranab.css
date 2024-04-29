@@ -1,0 +1,241 @@
+body{
+	background-image:url("Image/p.jpeg");
+	background-size:100% 100%;
+	margin:auto;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+}
+
+.menu {
+	font-family:tahoma;
+	font-weight:bold;
+	height:70px;
+	width:100%;
+	background:#87ceea;
+	border-radius:5px;
+	font-size:18px;
+}
+
+label {
+	font-family:fonty;
+	font-size:35pt;
+	color:white;
+	margin:5px;
+	padding:5px;
+	padding-left:60px;
+	float:left;
+	text-shadow:5px 5px 25px white;
+}
+
+.menu ul {
+	margin:0px;
+	padding:5px;
+	padding-right:50px;
+	background:none;
+	display:block;
+	float:right;
+}
+
+.menu ul li {
+	list-style:none;
+	display:inline-block;
+}
+
+.menu ul li a {
+	display:block;
+	text-decoration:none;
+	padding:20px;
+	color:white;
+}
+
+.menu ul li a:hover {
+	display:block;
+	color:#FFC0CB;
+	background:white;
+	box-shadow:inset 0px 0px 5px #000;
+}
+
+.welcome {
+	margin:35vh;
+	display:grid;
+	place-items:center;
+}
+
+.welcome {
+	font-size:85px;
+	font-family: newfont;
+	color:#ffadad;
+	text-shadow:0px 0px 60px white;
+}
+
+@font-face {
+	font-family:fonty;
+	src: url(Font/Alphaclouds-EGMW.ttf);
+}
+
+@font-face {
+	font-family:myfont;
+	src: url(Font/Awan.ttf);
+}
+
+h1 {
+	font-family:myfont;
+	color:white;
+	text-shadow:5px 5px 5px white;
+}
+
+p {
+  text-indent: 60px;
+}
+
+h2 {
+  text-indent: 35px;
+}
+
+audio {
+	margin-left:35px;
+}
+
+video {
+	margin-left:35px;
+}
+
+iframe {
+	margin-left:35px;
+}
+
+.kotak a {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.kotak button {
+	margin:o 15px;
+	padding:5px 0;
+	width:150pt;
+}
+.head {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:25px;
+	margin:20px;
+}
+.oll {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:40vh;
+}
+.grup-oll {
+	width:170px;
+	background:transparent;
+	border:2px solid rgba(255, 255, 255, .2);
+	backdrop-filter:blur(10px);
+	box-shadow:0 0 10px rgba(0, 0, 0, .1);
+	color:black;
+	border-radius:20px;
+	padding:30px 40px;
+	border-color:grey;
+}
+.lulu input {
+	height:20px;
+	width:150px;
+}
+.cek {
+	width:100px;
+	height:30px;
+	margin-top:20px;
+	border-radius:20px;
+	border:2px solid rgba(255, 255, 255, .2);
+	border-color:grey;
+}
+.hasil {
+	width:250px;
+	height:20px;
+	background:white;
+	border:none;
+	outline:none;
+	border:2px solid;
+	border-color:grey;
+	font-size:15px;
+	
+}
+.lulu input[type=number] {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+}
+
+.back {
+	width:100px;
+	height:40px;
+	background:#6ba5f2;
+	border:none;
+	outline:none;
+	border:2px solid;
+	border-color:grey;
+	font-size:20px;
+	color:white;
+	border-radius:20px;
+}
+.page {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+}
+
+.judul {
+	text-align:center;
+	font-family:myfont;
+	src: url(Font/Awan.ttf);
+	font-size:35px;
+}
+.cat {
+	width:450px;
+	background:transparent;
+	border:2px solid rgba(255, 255, 255, .2);
+	backdrop-filter:blur(10px);
+	box-shadow:0 0 10px rgba(0, 0, 0, .1);
+	color:black;
+	border-radius:20px;
+	padding:30px 40px;
+	border-color:grey;
+}
+.cat .input {
+	width:100%;
+	height:50px;
+	margin:30 0;
+}
+
+.input input {
+	width:100%;
+	height:100%;
+	background:transparent;
+	border:none;
+	outline:none;
+	border:2px solid rgba(255, 255, 255, .2);
+	border-radius:40px;
+	padding:20px 45px 20px 20px;
+	font-size:17px;
+	border-color:grey;
+}
+
+.input input::placeholder {
+	color:black;
+}
+
+.button {
+	width:100%;
+	height:45px;
+	background:white;
+	border:none;
+	outline:none;
+	border:2px solid;
+	border-color:grey;
+	border-radius:40px;
+	font-size:17px;
+}

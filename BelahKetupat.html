@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>luas Belah Ketupat</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="miranab.css" type="text/css">
+</head>
+<body>
+<a href="daftar.html"><button class="back">Back</button></a>
+<center><h1>Luas Belah Ketupat</h1></center>
+<center><h5 class="head">(½ x D1 x D2)</h5></center>
+<div class="oll">
+<div class="grup-oll">
+	<div class="lulu">
+		<h4>D1 :</h4>
+		<input id="d1" type="number" placeholder="Input Diagonal 1">
+		</div>
+		<div class="lulu">
+		<h4>D2 :</h4>
+		<input id="d2" type="number" placeholder="Input Diagonal 2">
+		</div>
+		
+		<button onclick="cekhasil()" class="cek">Hasil</button>
+		<button onclick="reset()" class="cek">Reset</button>
+		
+		<div class="lulu">
+		<h4>Luas :</h4>
+		<Input id="luasnya" type="number" placeholder="Hasil" class="hasil" readonly>
+		</div>
+	</div>
+</div>
+<script>
+function cekhasil() {
+var d1 = document.getElementById("d1").value;
+var d2 = document.getElementById("d2").value;
+document.getElementById("luasnya").value=d1*d2*0.5;
+}
+function reset() {
+document.getElementById("d1").value="";
+document.getElementById("d2").value="";
+document.getElementById("luasnya").value="";
+}
+</script>
+</body>
+</html>

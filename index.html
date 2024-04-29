@@ -1,0 +1,53 @@
+<html>  
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="miranab.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/01198f406a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+        <div class="page">
+			<div class="cat">
+			<h3 class="judul">Sign up</h3>
+				<form onsubmit="result-false" method="post">
+				<div class="input-group">
+					<div class="input">
+					<input type="text" id="username" placeholder="Username">
+					<i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                       
+
+				<div class="input-group">
+					<div class="input">
+					<input type="kelas" id="password" placeholder="Password">
+					<i class="fa-solid fa-lock"></i>
+					</div>
+				</div>`
+
+						<button onclick="login()" class="button">Login</button>
+
+			</div>
+		</div>
+        </form>
+<script type="text/javascript">
+    function login() {
+        var user = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+    
+    
+    if (user =="ketku" && pass=="ketlover"){
+        alert("Login Sukses!");
+        open("Menu_Miranda_Nabila.html");
+        window.close()
+    }else{
+        alert("Login Gagal!");
+    }
+    }
+</script>
+            </div>
+        </div>
+    </body>
+</html>

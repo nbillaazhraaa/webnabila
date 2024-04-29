@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>luas lingkaran</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="miranab.css" type="text/css">
+</head>
+<body>
+<a href="daftar.html"><button class="back">Back</button></a>
+<center><h1>Luas Lingkaran</h1></center>
+<center><h5 class="head">(π x r²)</h5></center>
+<div class="oll">
+<div class="grup-oll">
+	<div class="lulu">
+		<h4>Jari-jari :</h4>
+		<input id="jari" type="number" placeholder="Input Jari-jari">
+	</div>
+		<button onclick="cekhasil()" class="cek">Hasil</button>
+		<button onclick="reset()" class="cek">Reset</button>
+		<div class="lulu">
+		<h4>Luas :</h4>
+		<Input id="luasnya" type="number" placeholder="Hasil" class="hasil" readonly>
+	</div>
+	</div>
+	</div>
+<script>
+function cekhasil() {
+var jari  = document.getElementById("jari").value;
+document.getElementById("luasnya").value=jari*jari*3.14;
+}
+function reset() {
+document.getElementById("jari").value="";
+document.getElementById("luasnya").value="";
+}
+</script>
+</body>
+</html>

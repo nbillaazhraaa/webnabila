@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Luas persegi panjang</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="miranab.css" type="text/css">
+</head>
+<body>
+<a href="daftar.html"><button class="back">Back</button></a>
+<center><h1>Luas Persegi panjang</h1></center>
+<center><h5 class="head">(Panjang x Lebar)</h5></center>
+<div class="oll">
+<div class="grup-oll">
+	<div class="lulu">
+		<h4>Panjang :</h4>
+		<input id="pan" type="number" placeholder="Input panjang">
+		</div>
+		<div class="lulu">
+		<h4>Lebar :</h4>
+		<input id="leb" type="number" placeholder="Input lebar">
+		</div>
+		
+		<button onclick="cekHasil()" class="cek">Hasil</button>
+
+		<button onclick="reset()" class="cek">Reset</button>
+		
+		<div class="lulu">
+		<h4>Luas :</h4>
+		<input id="luas" type="number"  placeholder="Hasil" class="hasil" readonly>
+		</div>
+	</div>
+</div>
+<script>
+function cekHasil() {
+var pan = document.getElementById("pan").value;
+var leb = document.getElementById("leb").value;
+document.getElementById("luas").value=pan*leb;
+}
+function reset() {
+document.getElementById("pan").value="";
+document.getElementById("leb").value="";
+document.getElementById("luas").value="";
+}
+
+</script>
+</body>
+</html>
